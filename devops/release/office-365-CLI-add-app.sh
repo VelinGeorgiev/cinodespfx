@@ -10,6 +10,6 @@ o365 version
 
 o365 spo login $SITE_URL --authType password --userName $EMAIL --password $PASS
 
-o365 spo app add --filePath "./_DevOps/SPFx solution/node-frontend.sppkg" --overwrite
+o365 spo app add --filePath "./_DevOps/SPFx sppkg/node-frontend.sppkg" --overwrite
 
 o365 spo app deploy --name node-frontend.sppkg --skipFeatureDeployment
