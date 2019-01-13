@@ -18,14 +18,12 @@ steps:
 - script: |
     cd spfx
     npm install
-  displayName: 'npm install'
-
-- script: |
     gulp bundle --ship
     gulp package-solution --ship
-  displayName: 'Build and package the solution'
+  displayName: 'npm install, build and package the solution'
 
 - script: |
+    cd spfx
     npm test
   displayName: 'Run jest tests'
 
